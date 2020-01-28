@@ -7,10 +7,10 @@ class LoginPage extends StatelessWidget {
       body: Container(
         color: Color(0xFFF5F5F5),
         padding: EdgeInsets.only(
-          top: 80,
+          top: 50,
           left: 20,
           right: 20,
-          bottom: 40,
+          bottom: 30,
         ),
         child: Column(
           children: <Widget>[
@@ -28,8 +28,12 @@ class LoginPage extends StatelessWidget {
                 ],
               ),
               child: Padding(
-                padding: EdgeInsets.all(15),
-                child: ListView(
+                padding: EdgeInsets.only(
+                  left: 15,
+                  right: 15,
+                  top: 50,
+                ),
+                child: Column(
                   children: <Widget>[
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -98,6 +102,7 @@ class LoginPage extends StatelessWidget {
                       height: 10,
                     ),
                     Container(
+                      width: double.infinity,
                       decoration: BoxDecoration(
                         color: Colors.blue,
                         borderRadius: BorderRadius.all(
@@ -129,6 +134,65 @@ class LoginPage extends StatelessWidget {
                   fontSize: 14,
                   fontWeight: FontWeight.w300,
                 ),
+              ),
+            ),
+            Container(
+              width: double.infinity,
+              height: 60,
+              decoration: BoxDecoration(
+                border: Border.all(
+                  width: 2.0,
+                  color: Colors.blue,
+                ),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(5),
+                ),
+              ),
+              child: FlatButton(
+                child: Row(
+                  children: <Widget>[
+                    Container(
+                      height: 24,
+                      width: 100,
+                      child: Image.asset(
+                        "assets/facebook.png",
+                      ),
+                    ),
+                    Text("Sign In with Facebook"),
+                  ],
+                ),
+                onPressed: () {},
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              width: double.infinity,
+              height: 60,
+              decoration: BoxDecoration(
+                border: Border.all(
+                  width: 2.0,
+                  color: Colors.blue,
+                ),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(5),
+                ),
+              ),
+              child: FlatButton(
+                child: Row(
+                  children: <Widget>[
+                    Container(
+                      height: 24,
+                      width: 100,
+                      child: Image.asset(
+                        "assets/google.png",
+                      ),
+                    ),
+                    Text("Sign In with Google"),
+                  ],
+                ),
+                onPressed: () {},
               ),
             ),
           ],
