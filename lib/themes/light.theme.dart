@@ -9,11 +9,15 @@ ThemeData lightTheme() {
   return ThemeData(
     brightness: brightness,
     textTheme: new TextTheme(
-      body1: new TextStyle(color: Colors.red),
+      // body1: new TextStyle(color: Colors.blue),
       display4: new TextStyle(fontSize: 78),
       button: new TextStyle(color: Colors.green),
     ),
     primaryColor: primaryColor,
     accentColor: Colors.white,
+    // buttonTheme: new ButtonThemeData(
+    //   buttonColor: Colors.orange,
+    //   textTheme: ButtonTextTheme.primary,
+    // ),
   );
 }
