@@ -10,7 +10,7 @@ class ProductList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: ListView(
-        scrollDirection: Axis.horizontal,
+        scrollDirection: scrollDirection,
         children: <Widget>[
           ProductCard(
             title: "Nike Dry-Fit Long Sleeve",
