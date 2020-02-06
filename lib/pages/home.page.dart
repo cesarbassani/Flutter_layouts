@@ -24,9 +24,7 @@ class HomePage extends StatelessWidget {
               ),
               Text(
                 "Categories",
-                style: TextStyle(
-                  fontSize: 30,
-                ),
+                style: Theme.of(context).textTheme.headline,
               ),
               SizedBox(
                 height: 10,

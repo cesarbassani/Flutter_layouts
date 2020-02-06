@@ -8,11 +8,12 @@ const backgroundColor = const Color(0xFFF5F5F5);
 ThemeData lightTheme() {
   return ThemeData(
     brightness: brightness,
-    textTheme: new TextTheme(
-      // body1: new TextStyle(color: Colors.blue),
-      display4: new TextStyle(fontSize: 78),
-      button: new TextStyle(color: Colors.green),
-    ),
+    // textTheme: new TextTheme(
+    //   body1: new TextStyle(color: Colors.blue),
+    //   display4: new TextStyle(fontSize: 78),
+    //   button: new TextStyle(color: Colors.green),
+    //   headline: new TextStyle(color: Colors.deepPurple),
+    // ),
     primaryColor: primaryColor,
     accentColor: Colors.white,
     // buttonTheme: new ButtonThemeData(
