@@ -110,7 +110,12 @@ class LoginPage extends StatelessWidget {
                         height: 40,
                         alignment: Alignment.centerRight,
                         child: FlatButton(
-                          child: Text("Forgot you password?"),
+                          child: Text(
+                            "Forgot you password?",
+                            style: TextStyle(
+                              color: Theme.of(context).primaryColor,
+                            ),
+                          ),
                           onPressed: () {},
                         ),
                       ),
@@ -120,7 +125,7 @@ class LoginPage extends StatelessWidget {
                       Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          color: Colors.blue,
+                          color: Theme.of(context).primaryColor,
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),
@@ -158,7 +163,7 @@ class LoginPage extends StatelessWidget {
                 decoration: BoxDecoration(
                   border: Border.all(
                     width: 2.0,
-                    color: Colors.blue,
+                    color: Theme.of(context).primaryColor,
                   ),
                   borderRadius: BorderRadius.all(
                     Radius.circular(5),
@@ -189,7 +194,7 @@ class LoginPage extends StatelessWidget {
                 decoration: BoxDecoration(
                   border: Border.all(
                     width: 2.0,
-                    color: Colors.blue,
+                    color: Theme.of(context).primaryColor,
                   ),
                   borderRadius: BorderRadius.all(
                     Radius.circular(5),
